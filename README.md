@@ -1,8 +1,8 @@
 # ember-tools
 Configurations and scripts to use over ssh in ember.hpc.lab
-See vim-poly-header for vim tools
+See polyprogrammingclub/vim-poly-header for vim tools
 
-### Directions
+# Directions
 From within ember,
 ```
 git clone https://github.com/polyprogrammingclub/ember-tools
@@ -12,3 +12,7 @@ ln -s ~/ember-tools/ ~/bin
 source ~/.bashrc
 ```
 The bash profile comes with some aliases. Try sql_connect to log into mariadb
+
+# Acknowledgements
+[Busyloop - lolcat](https://github.com/busyloop/lolcat) <br />
+[KittyKatt - screenfetch](https://github.com/KittyKatt/screenFetch) <br />
