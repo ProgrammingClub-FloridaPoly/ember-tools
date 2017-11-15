@@ -11,3 +11,4 @@ mv ember-tools/.bashrc ~/.bashrc
 ln -s ~/ember-tools/ ~/bin
 source ~/.bashrc
 ```
+The bash profile comes with some aliases. Try sql_connect to log into mariadb

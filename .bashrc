@@ -66,7 +66,6 @@ alias emergency='notify-send --urgency=critical -i "$([ $? = 0 ] && echo termina
 alias c='clear'
 # mariadb
 alias sql_connect='mysql -u $(whoami) -p -h ember-db'
-alias sql_verify='mysql -u $(whoami) -p -h ember-db'
 
 #methods
 weather(){ 
