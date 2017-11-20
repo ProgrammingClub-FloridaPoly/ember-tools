@@ -7,8 +7,7 @@ stty -echoctl
 
 # term initializations
 PS1="\[\e[0;1;34m\][\$(date +%R)] \[\e[00;01;35m\]${chroot:+($chroot)}\u@\h\[\e[01;34m\]:\w\[\e[01;31m\] \$ "
-#PS1='\[\e]2;\u@\h\a\]\u@\h \W \$ '
-echo -e "\x1b[1;1H\x1b[J"   #clear the screen after exec bash is run
+echo -e "\x1b[1;1H\x1b[J"
 echo "There are $(users | wc -w) users logged in."
 echo "Logged in as $(whoami)"
 echo -e "\n$(pwd)\n"
@@ -25,10 +24,6 @@ alias cls='clear; ls -AG'
 alias cll='clear; ll -G'
 alias clll='clear; ll | less'
 alias ld='clear; ls -1v '
-
-#customize these ls options
-alias lso='clear; echo -e "\e[31mSorting from char 10 by default:\n" ; ls -1 | sort -n -k 1.10; echo -e ""'
-alias lsao='clear; echo -e "\e[31mSorting from char 10 by default:\n"; ls -lAF -1 | sort -n -k 1.10; echo -e ""'
 
 # grep options
 alias grep='grep --color=auto'
