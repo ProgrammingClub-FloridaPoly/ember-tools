@@ -9,7 +9,11 @@ stty -echoctl
 PS1="\[\e[0;1;34m\][\$(date +%R)] \[\e[00;01;35m\]${chroot:+($chroot)}\u@\h\[\e[01;34m\]:\w\[\e[01;31m\] \$ "
 echo -e "\x1b[1;1H\x1b[J"
 echo "There are $(users | wc -w) users logged in."
-echo "Logged in as $(whoami)" | lolcat
+if command_exists lolcat; then
+    echo "Logged in as $(whoami)" | lolcat
+else
+    echo "Logged in as $(whoami)"
+fi
 echo -e "\n$(pwd)\n"
 
 # hard screen clear
