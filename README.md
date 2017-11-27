@@ -16,3 +16,4 @@ The bash profile comes with some aliases. Use 'alias' to see aliases.
 # Acknowledgements
 [Busyloop - lolcat](https://github.com/busyloop/lolcat) <br />
 [KittyKatt - screenfetch](https://github.com/KittyKatt/screenFetch) <br />
+[abishekvashok - cmatrix](https://github.com/abishekvashok/cmatrix) <br />
